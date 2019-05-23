@@ -61,3 +61,52 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
+
+/*Navigation Bar*/
+
+nav {
+  background: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  font-weight: bold;
+  font-size: 1.15rem;
+  list-style: none;
+}
+
+/*Products and Business*/
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: solid black 4px;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.product-image img {
+  max-width: 8rem
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
