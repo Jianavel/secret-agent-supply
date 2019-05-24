@@ -80,10 +80,11 @@ nav ul {
 
 /*Products and Business*/
 
-.products, .business-info {
+.products,
+.business-info {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 0 0;
+  margin-top: 3rem;
 }
 
 .product {
@@ -96,11 +97,11 @@ nav ul {
   height: 9rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
+
 .product-image img {
-  max-width: 8rem
+  max-width: 8rem;
+  object-fit: contain;
 }
 
 .description {
@@ -108,5 +109,20 @@ nav ul {
   background-color: black;
   color: white;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
+
+.info {
+  width: 35%;
+}
+
+.title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+
+/*Footer*/
+.
