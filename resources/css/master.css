@@ -20,6 +20,7 @@ body {
     font-size: 16px;
 }
 }
+
 /*Header*/
 .company {
   background-color: black;
@@ -47,6 +48,12 @@ body {
   background-size: cover;
 }
 
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+}
+
 .headline {
   background-color: black;
   width: 20rem;
@@ -56,15 +63,34 @@ body {
   top: 9rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .headline {
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+}
+
 .headline h4 {
   font-size: 1rem;
   padding-bottom: 0.25rem;
   font-weight: bold;
 }
 
+@media only screen and (max-width: 470px) {
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+}
+
 .headline h1 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 470px) {
+.headline h1 {
+    font-size: 1rem;
+  }
 }
 
 /*Navigation Bar*/
@@ -83,7 +109,9 @@ nav ul {
   list-style: none;
 }
 
-.mobile-nav {display: none;}
+.mobile-nav {
+  display: none;
+}
 
 /* query for tablet */
 
@@ -96,6 +124,13 @@ nav ul {
     text-align: center;
   }
 
+/*For some reason if I touch this at all it ressets my image style?! */
+@media only screen and (min-width: 1024px) {
+
+   }
+
+
+}
 
 /*Products and Business*/
 
@@ -105,9 +140,22 @@ nav ul {
   justify-content: space-between;
   margin-top: 3rem;
 }
+/* Query for phones */
 
-.product {
-  width: 30%;
+@media only screen and (max-width: 470px) {
+  .watch {
+    display: none;
+  }
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
 }
 
 .product-image {
@@ -141,13 +189,36 @@ nav ul {
   color: white;
   padding: 1rem 2rem;
 }
+
 /* query for tablet */
+@media only screen and (max-width: 470px) {
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
-  .info {
+  .product {
     width: 47%;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+}
+
+
 
 
 /*Footer*/
