@@ -15,6 +15,11 @@ body {
   font-family: helvetica sans-serif;
 }
 
+@media only screen and (max-width: 1024px) {
+body {
+    font-size: 16px;
+}
+}
 /*Header*/
 .company {
   background-color: black;
@@ -78,6 +83,20 @@ nav ul {
   list-style: none;
 }
 
+.mobile-nav {display: none;}
+
+/* query for tablet */
+
+@media only screen and (max-width: 1024px) {
+  nav ul {display: none;}
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {display: block;
+    text-align: center;
+  }
+
+
 /*Products and Business*/
 
 .products,
@@ -121,6 +140,13 @@ nav ul {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
+}
+/* query for tablet */
+
+@media only screen and (max-width: 1024px) {
+  .info {
+    width: 47%;
+  }
 }
 
 
