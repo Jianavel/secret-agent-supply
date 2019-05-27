@@ -229,3 +229,9 @@ footer {
   color: white;
   text-align: left;
 }
+/* Phone queries */
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
+}
